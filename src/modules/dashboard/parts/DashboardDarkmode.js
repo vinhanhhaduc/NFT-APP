@@ -5,12 +5,12 @@ import useDarkMode from '../../../hooks/useDarkmode';
 import useLocalStorage from '../../../hooks/useLocalStorage';
 
 const DashboardDarkmode = ({ toggle = true, className = '' }) => {
-  const [toggleDarkmode, setToggleDarkmode] = useLocalStorage(false);
+  const [toggleDarkmode, setToggleDarkmode] = useLocalStorage(true);
   const [colorTheme, setTheme] = useDarkMode();
   return (
     <div>
       <div className=" flex mt-[35px] px-[42px] mb-[18px] items-center gap-x-4">
-        {!toggleDarkmode ? (
+        {colorTheme === 'dark' ? (
           <Label className={`mb-[7px] select-none ${className}`}>
             <IconDarkmode
               onClick={() => {
@@ -51,7 +51,7 @@ const DashboardDarkmode = ({ toggle = true, className = '' }) => {
             />
             <div
               className={`inline-block w-[66px] h-[28px] relative cursor-pointer rounded-full pl-1 py-[4px] transition-all bg-[#E4E4E4] ${
-                toggleDarkmode ? ' bg-[#12141B]' : ''
+                colorTheme === 'light' ? ' bg-[#12141B]' : ''
               }`}
             >
               <span
@@ -60,7 +60,7 @@ const DashboardDarkmode = ({ toggle = true, className = '' }) => {
                     'background-color 0.25s linear, transform 0.25s linear',
                 }}
                 className={` w-[20px] h-[20px] bg-primary rounded-full inline-block border-2 border-white absolute shadow-[0px_3px_4px_rgba(0,_0,_0,_0.14)] ${
-                  toggleDarkmode ? 'translate-x-[38px]' : ''
+                  colorTheme === 'light' ? 'translate-x-[38px]' : ''
                 }`}
               ></span>
             </div>
