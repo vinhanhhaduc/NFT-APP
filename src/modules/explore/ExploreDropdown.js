@@ -99,9 +99,9 @@ const ExploreDropdown = () => {
           </Dropdown.List>
         </Dropdown>
       </div>
-      <div className="flex items-center md:right-[80px] right-[220px] relative md:mt-0">
+      <div className="flex items-center justify-between right-[80px] relative">
         <button className="font-semibold text-base text-[#4C4D53] border-2 border-[#F0F3F6] dark:border-[#2F323B] w-[98px] h-[44px] rounded-[10px] left-[360px] relative">
-          <p className="ml-[12px]">Latest</p>
+          <p className="ml-[25px]">Latest</p>
         </button>
         <IconFilter className="left-[270px] relative mt-1"></IconFilter>
       </div>

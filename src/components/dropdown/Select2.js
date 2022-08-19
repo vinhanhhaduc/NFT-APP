@@ -1,13 +1,12 @@
 import React from 'react';
 import { useDropdown } from './dropdown-context';
 
-const Select = ({ placeholder = '', className = '' }) => {
+const Select2 = ({ placeholder = '', className = '' }) => {
   const { toggle, show, day } = useDropdown();
-  console.log(day);
   return (
     <div
       className={`flex py-[6px] px-[16px] border rounded-[10px] cursor-pointer text-[#4C4D53] ${
-        day.length >= 11 ? 'w-[110px]' : ''
+        day.length >= 11 ? 'w-[110px]' : "left-3 relative"
       } ${className}`}
       onClick={toggle}
     >
@@ -18,7 +17,7 @@ const Select = ({ placeholder = '', className = '' }) => {
         {show ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-[14px] h-[14px] mt-[10px]`}
+            className={`w-[14px] h-[14px] mt-[10px] ${day.length <= 7 ? "left-3 relative" : ""}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -33,7 +32,7 @@ const Select = ({ placeholder = '', className = '' }) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-[14px] h-[14px] mt-[10px]`}
+            className={`w-[14px] h-[14px] mt-[10px] ${day.length <= 7 ? "left-3 relative": ""}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -51,4 +50,4 @@ const Select = ({ placeholder = '', className = '' }) => {
   );
 };
 
-export default Select;
+export default Select2;

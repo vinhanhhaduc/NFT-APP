@@ -4,12 +4,10 @@ import RankingsDropdown from '../modules/rankings/part/RankingsDropdown';
 import Table from '../components/table/Table';
 import Checkbox from '../components/checkbox/Checkbox';
 import useToggleValue from '../hooks/useToggleValue';
-import { collection, getDocs, onSnapshot } from '@firebase/firestore';
+import { collection, onSnapshot } from '@firebase/firestore';
 import { db } from '../firebase-app/firebaseConfig';
-import { useNavigate } from 'react-router-dom';
 import IconWrappedEther from '../components/icons/IconWrappedEther';
 import IconMore from '../components/icons/IconMore';
-const NFT_LIST_PAGE = 1;
 const RankingPages = () => {
   const [nftList, setNftList] = useState([]);
   const { value: collections, handleToggleValue: handleCollectionToggleValue } =

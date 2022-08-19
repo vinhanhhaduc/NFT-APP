@@ -23,7 +23,6 @@ const Checkbox = ({
         <input
           type="checkbox"
           className="hidden"
-          onChange={() => {}}
           name={name}
         />
         <span className={classNames(checked ? '' : 'opacity-0 invisible')}>

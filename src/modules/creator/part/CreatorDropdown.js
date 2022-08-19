@@ -9,7 +9,7 @@ const CreatorDropdown = () => {
           placeholder="Featured"
           className="border-[#F2F2F2] dark:border-[#35373e] text-[#4C4D53] font-semibold text-sm py-[0.375rem] px-[0.375rem] mb-[0.125rem]"
         ></Dropdown.Select2>
-        <Dropdown.List space="a" className="mt-[0.125rem] rounded-[0.313rem]">
+        <Dropdown.List space="a" className="mt-[0.125rem] rounded-[0.313rem] ml-3">
           <Dropdown.Option className="text-[#4C4D53] font-semibold text-sm mb-1">
             Featured
           </Dropdown.Option>

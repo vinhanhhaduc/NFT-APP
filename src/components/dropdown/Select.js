@@ -1,12 +1,13 @@
 import React from 'react';
 import { useDropdown } from './dropdown-context';
 
-const Select = ({ placeholder = '', className = '' }) => {
+const Select = ({ placeholder = '', className = '', padding = "" }) => {
   const { toggle, show, day } = useDropdown();
   return (
     <div
-      className={`flex py-[6px] px-[16px] border rounded-[10px] cursor-pointer text-[#4C4D53] ${className}`}
+      className={`flex py-[6px] px-[16px] border rounded-[10px] cursor-pointer text-[#4C4D53] ${className} ${padding}`}
       onClick={toggle}
+      padding={padding}
     >
       <span className={className}>{day.length === 0 ? placeholder : day}</span>
       <span>

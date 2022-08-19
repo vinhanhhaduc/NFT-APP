@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     height: 48,
     padding: '0 30px',
     top: '24px',
-    left: '24px',
+    left: '45px',
     position: 'relative',
   },
 });

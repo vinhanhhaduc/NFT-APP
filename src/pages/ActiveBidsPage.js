@@ -20,6 +20,7 @@ const ActiveBidsPage = () => {
             <Dropdown.Select
               placeholder="Newest"
               className="border-[#F2F2F2] dark:border-[#35373e] text-[#4C4D53] font-semibold text-sm"
+              padding="py-[10px]"
             ></Dropdown.Select>
             <Dropdown.List
               space="a"
