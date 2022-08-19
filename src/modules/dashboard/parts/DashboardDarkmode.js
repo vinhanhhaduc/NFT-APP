@@ -5,7 +5,7 @@ import useDarkMode from '../../../hooks/useDarkmode';
 import useLocalStorage from '../../../hooks/useLocalStorage';
 
 const DashboardDarkmode = ({ toggle = true, className = '' }) => {
-  const [toggleDarkmode, setToggleDarkmode] = useLocalStorage(true);
+  const [toggleDarkmode, setToggleDarkmode] = useLocalStorage(false);
   const [colorTheme, setTheme] = useDarkMode();
   return (
     <div>
