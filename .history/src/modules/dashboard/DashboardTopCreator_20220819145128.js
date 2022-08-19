@@ -32,7 +32,7 @@ const topCreator = [
 ];
 const DashboardTopCreator = () => {
   return (
-    <div className="flex h-10 mr-10 relative mt-10  dark:visible">
+    <div className="flex h-10 relative mt-10  dark:visible">
       <h2 className="font-semibold dark:text-white text-black2 text-lg">
         Trending
       </h2>

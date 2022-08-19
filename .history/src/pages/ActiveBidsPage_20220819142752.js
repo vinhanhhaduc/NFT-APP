@@ -17,11 +17,11 @@ const ActiveBidsPage = () => {
         </div>
         <div className="w-[6rem] h-[3.125rem] right-[4.875rem] top-[30px] relative ">
           <Dropdown className="z-50 whitespace-nowrap border-[#F2F2F2]">
-            <Dropdown.Select2
+            <Dropdown.Select
               placeholder="Newest"
               className="border-[#F2F2F2] dark:border-[#35373e] text-[#4C4D53] font-semibold text-sm"
               padding="py-[10px]"
-            ></Dropdown.Select2>
+            ></Dropdown.Select>
             <Dropdown.List
               space="a"
               className="mt-[0.125rem] rounded-[0.313rem]"

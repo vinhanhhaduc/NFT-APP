@@ -7,7 +7,7 @@ const CreatorDropdown = () => {
       <Dropdown className="z-50 whitespace-nowrap">
         <Dropdown.Select2
           placeholder="Featured"
-          className="border-[#F2F2F2] dark:border-[#35373e] text-[#4C4D53] font-semibold text-sm py-[0.375rem] px-[0.375rem] mb-[0.125rem]"
+          className="border-[#F2F2F2] dark:border-[#35373e] text-[#4C4D53] font-semibold text-sm py-[0.375rem]  mb-[0.125rem]"
         ></Dropdown.Select2>
         <Dropdown.List
           space="a"

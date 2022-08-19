@@ -14,7 +14,7 @@ const DashboardPage = () => {
           <Card></Card>
         </div>
       </div>
-      <div className="flex flex-1 justify-between">
+      <div className="flex flex-1">
         <div className="bottom-[183px] relative">
           <DashboardItem></DashboardItem>
           <DashboardHotBid></DashboardHotBid>

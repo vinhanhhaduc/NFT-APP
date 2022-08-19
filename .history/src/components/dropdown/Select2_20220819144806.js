@@ -15,7 +15,7 @@ const Select2 = ({ placeholder = '', className = '' }) => {
         {show ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-[14px] h-[14px] mt-[10px] left-3 relative `}
+            className={`w-[14px] h-[14px] mt-[10px]`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -30,7 +30,7 @@ const Select2 = ({ placeholder = '', className = '' }) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-[14px] h-[14px] mt-[10px] left-3 relative `}
+            className={`w-[14px] h-[14px] mt-[10px] `}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

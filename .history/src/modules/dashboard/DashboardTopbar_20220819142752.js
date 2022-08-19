@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import DashboardSearch from './parts/DashboardSearch';
 import { Button } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import detectEthereumProvider from '@metamask/detect-provider';
+import { toast } from 'react-toastify';
 const useStyles = makeStyles({
   root: {
     background: 'primary',

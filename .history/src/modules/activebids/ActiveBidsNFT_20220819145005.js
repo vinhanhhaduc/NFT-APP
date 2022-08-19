@@ -188,7 +188,7 @@ const ActiveBidsNFT = () => {
                     </p>
                   </div>
                 </div>
-                <button className="border border-[#EBEDFC] dark:border-[#2081E2] h-[40px] w-full rounded-[10px] mt-4 hover:bg-primary hover:bg-opacity-10">
+                <button className="border border-[#EBEDFC] dark:border-[#2081E2] h-[40px] w-full rounded-[10px] mt-[10px] hover:bg-primary hover:bg-opacity-10">
                   <p className="font-semibold text-primary text-base">
                     Place Bid
                   </p>

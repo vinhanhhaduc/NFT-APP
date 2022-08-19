@@ -8,14 +8,14 @@ const Select2 = ({ placeholder = '', className = '' }) => {
       className={`flex py-[6px] px-[16px] border rounded-[10px] cursor-pointer text-[#4C4D53] ${className}`}
       onClick={toggle}
     >
-      <span className={`py-[0.3rem]`}>
+      <span className={`py-[0.375rem] px-[0.375rem]`}>
         {day.length === 0 ? placeholder : day}
       </span>
       <span>
         {show ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-[14px] h-[14px] mt-[10px] left-3 relative `}
+            className={`w-[14px] h-[14px] mt-[10px]`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -30,7 +30,7 @@ const Select2 = ({ placeholder = '', className = '' }) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-[14px] h-[14px] mt-[10px] left-3 relative `}
+            className={`w-[14px] h-[14px] mt-[10px] `}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
