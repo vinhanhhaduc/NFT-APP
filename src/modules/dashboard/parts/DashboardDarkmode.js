@@ -10,16 +10,8 @@ const DashboardDarkmode = ({ toggle = true, className = '' }) => {
   return (
     <div>
       <div className=" flex mt-[35px] px-[42px] mb-[18px] items-center gap-x-4">
-        {colorTheme === 'dark' ? (
-          <Label className={`mb-[7px] select-none ${className}`}>
-            <IconDarkmode
-              onClick={() => {
-                setTheme(colorTheme);
-                setToggleDarkmode(!toggleDarkmode);
-              }}
-            ></IconDarkmode>
-          </Label>
-        ) : (
+        {colorTheme === 'light' ? (
+
           <Label className={`mb-[7px] select-none ${className}`}>
             <svg
               width="23"
@@ -37,6 +29,15 @@ const DashboardDarkmode = ({ toggle = true, className = '' }) => {
                 fill="currentColor"
               />
             </svg>
+          </Label>
+        ) : (
+          <Label className={`mb-[7px] select-none ${className}`}>
+            <IconDarkmode
+              onClick={() => {
+                setTheme(colorTheme);
+                setToggleDarkmode(!toggleDarkmode);
+              }}
+            ></IconDarkmode>
           </Label>
         )}
         {toggle && (
