@@ -3,7 +3,7 @@ import useLocalStorage from './useLocalStorage';
 
 export default function useDarkMode() {
   // eslint-disable-next-line no-undef
-  const [theme, setTheme] = useLocalStorage('light');
+  const [theme, setTheme] = useLocalStorage('dark');
   const colorTheme = theme === 'light' ? 'dark' : 'light';
   useEffect(() => {
     const root = window.document.documentElement;
