@@ -23,11 +23,6 @@ const DashboardProfile = () => {
       title: 'My Watchlist',
       url: '/my-watchlist',
     },
-    {
-      icon: <IconSetting></IconSetting>,
-      title: 'Setting',
-      url: '/setting',
-    },
   ];
   const profileLinkClass =
     'ml-5 px-[22px] mb-7 flex items-center w-48 h-12 rounded-xl font-bold text-base mb-3';

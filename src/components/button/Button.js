@@ -18,7 +18,7 @@ const Button = ({
   return (
     <button
       className={classNames(
-        'flex items-center justify-center p-4 text-base text-white',
+        'flex items-center justify-center p-4 text-base',
         !!isLoading ? 'opacity-50 pointer-events-none' : '',
         className,
       )}

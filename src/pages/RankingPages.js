@@ -28,7 +28,7 @@ const RankingPages = () => {
     }
     fetchData();
   }, []);
-  console.log(nftList);
+
   return (
     <LayoutDashboard height="h-[75rem]">
       <h1 className="text-black1 dark:text-white font-bold text-3xl ml-10 mt-[2.625rem] mb-1 z-10 w-[20rem]">
@@ -104,7 +104,7 @@ const RankingPages = () => {
                           item.price24h ? 'text-secondary' : 'text-error'
                         }`}
                       >
-                        {item.price24 + ' %'}
+                        {item.price24 + '%'}
                       </p>
                     </td>
                     <td>
@@ -113,7 +113,7 @@ const RankingPages = () => {
                           item.price7d ? 'text-secondary' : 'text-error'
                         }`}
                       >
-                        {item.price7 + ' %'}
+                        {item.price7 + '%'}
                       </p>
                     </td>
                     <td>
@@ -125,7 +125,7 @@ const RankingPages = () => {
                       </div>
                     </td>
                     <td>
-                      <p className="font-semibold text-sm mb-1 ml-1 text-[#2A2C33]">
+                      <p className="font-semibold text-sm mb-1 ml-4 text-[#2A2C33]">
                         {item.Owners / 1000 + 'k'}
                       </p>
                     </td>

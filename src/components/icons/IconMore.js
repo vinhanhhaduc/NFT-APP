@@ -2,7 +2,7 @@ import React from 'react';
 
 const IconMore = () => {
   return (
-    <div className="bg-[#F7F7F7] rounded-full w-10 h-10 items-center flex justify-center cursor-pointer">
+    <div className="bg-[#F7F7F7] rounded-full w-10 h-10 items-center flex justify-center cursor-pointer ml-3">
       <svg
         width="25"
         height="24"

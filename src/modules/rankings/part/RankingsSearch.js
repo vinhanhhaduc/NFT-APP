@@ -13,7 +13,7 @@ const RankingsSearch = () => {
           className="bg-transparent text-base placeholder:text-[#808191] w-full text-[#808191]"
         />
         <Button className="whitespace-nowrap bg-primary w-[9.188rem] h-[3rem] rounded-[0.75rem] mt-[0.313rem] left-[0.625rem] relative">
-          <p className="font-['Inter'] text-sm">Advance Search</p>
+          <p className="font-['Inter'] text-sm text-white">Advance Search</p>
         </Button>
       </div>
     </div>

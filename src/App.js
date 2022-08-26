@@ -6,6 +6,7 @@ const ExplorePage = lazy(() => import('./pages/ExplorePage'));
 const ActiveBidsPage = lazy(() => import('./pages/ActiveBidsPage'));
 const CreatorPage = lazy(() => import('./pages/CreatorPage'));
 const RankingPages = lazy(() => import('./pages/RankingPages'));
+const MyCollectionPage = lazy(() => import('./pages/MyCollectionPage'));
 
 const App = () => {
   return (
@@ -29,6 +30,10 @@ const App = () => {
             <Route
               path="/rankings"
               element={<RankingPages></RankingPages>}
+            ></Route>
+            <Route
+              path="/my-collection"
+              element={<MyCollectionPage></MyCollectionPage>}
             ></Route>
           </Routes>
         </Suspense>
